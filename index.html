@@ -6,17 +6,42 @@
 	<script type="text/javascript" src="jquery/jquery.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			alert('ola mundo');
-
+			
+			$('h1').css("text-align","center");
+			$('h2').css("text-align","center");
 			$('h1').css("color","#f66");
 			$('h1').css("font-size","50px");
+			$('a').css("font-size","50px");
+			$('a').css("padding","5px");
+			$('a').css("margin-left","5%");
+			$('a').css("text-decoration","none");
+			$('h1').hide();
+			$('h1').delay('1000');
+			$('h1').fadeIn("slow");
+
+			$('h1').click(function(){
+				$('h1').css("color","blue");
+			});
+			$('h2').click(function(){
+				$('h2').css("color","orange");
+			});
+			$('button').click(function(){
+				$('a').hide();
+				alert("arquivo apagado");
+				});
+
 		});
 
 	</script>
 </head>
 <body>
 
-<h1>ola mundo</h1>
+<h1>Jquery</h1>
+<h2>Javascript</h2>
+<a href="#">c#</a>
+<a href="#">java</a>
+<a href="#">c++</a>
+<button>teste</button>
 
 </body>
 </html>
